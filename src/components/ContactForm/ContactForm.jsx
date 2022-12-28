@@ -73,6 +73,4 @@ export const ContactForm = ({ handleAddContact }) => {
 
 ContactForm.propTypes = {
   handleAddContact: PropTypes.func,
-  handleChange: PropTypes.func,
-  reset: PropTypes.func,
 };
