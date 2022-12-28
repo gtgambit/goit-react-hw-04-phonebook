@@ -8,10 +8,20 @@ export const ContactForm = ({ handleAddContact }) => {
   const [number, setNumber] = useState('');
 
   const handleChange = event => {
-    if (event.target.name === 'name') {
-      setName(event.target.value);
-    } else if (event.target.name === 'number') {
-      setNumber(event.target.value);
+    switch (event.target.name) {
+      case (event.target.name = 'name'):
+        setName(event.target.value);
+        break;
+      case (event.target.name = 'number'):
+        setNumber(event.target.value);
+        break;
+      default:
+        break;
+      //if (event.target.name === 'name') {
+      //  setName(event.target.value);
+      //} else if (event.target.name === 'number') {
+      //  setNumber(event.target.value);
+      //}
     }
   };
 
